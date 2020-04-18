@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href = "styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class = "main-container">
+        <h1 style="font-size: 70px; font-weight: 300;">Black Jack</h1>
+        <h3 style="font-size: 40px; font-weight: 100;"><span id = "result">let's play</span></h3>
+        
+        <div class = "blackjack-row-1">
+            <div class = "your-box border-left" id = "yourBox">
+                <h2 class = "your-result">your score : <span id = "yourResult">0</span></h2>
+            </div>
+            <div class = "dealer-box" id = "dealerBox">
+                <h2 class = "dealer-result">dealer score : <span id = "dealerResult">0</span></h2>
+            </div>
+        </div>
+
+        <div class = "blackjack-row-2">
+            <button class = "btn btn-lg btn-primary mr-btn" id = "blackjackHitButton">hit</button>
+            <button class = "btn btn-lg btn-warning mr-btn" id = "blackjackStandButton">stand</button>
+            <button class = "btn btn-lg btn-danger mr-btn" id = "blackjackDealButton">deal</button>
+        </div>
+
+        <div class = "blackjack-row-3">
+            <table>
+                <tr>
+                    <th>wins</th>
+                    <th>losses</th>
+                    <th>draw</th>
+                </tr>
+                <tr>
+                    <td><span id = "wins">0</span></td>
+                    <td><span id = "losses">0</span></td>
+                    <td><span id = "draw">0</span></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>

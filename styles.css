@@ -1,0 +1,90 @@
+
+.border-left{
+    border-right: 1px solid black;
+}
+.mr-btn{
+    margin: 4px;
+}
+
+.main-container{
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    color:black;
+    width: 97%;
+}
+
+.blackjack-row-1{
+    display:flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.blackjack-row-3{
+    display:flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+
+
+
+.blackjack-row-1, .blackjack-row-2{
+    background-color: rgb(4, 56, 4);
+    color: #ffffff;
+    padding:10px;
+}
+
+.blackjack-row-1 div{
+    padding:10px;
+    flex: 1px;
+    height: 540px;
+}
+
+table, th, tr, td{
+    border:1px solid black;
+    padding:10px;
+    color:black;
+    font-size: large;
+}
+
+.blackjack-row-2 button{
+    width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: black;
+}
+
+
+
+
+
+.your-result{
+    width: 884px;
+    height: 72px;
+}
+
+.dealer-result{
+    width: 884px;
+    height: 72px;
+}
+
+
+.clear{
+    clear: left;
+
+}
+
+
+
+.image-class{
+    height: 160;
+    margin-left: 116px;
+    margin-bottom: 25px;
+}
+.image-class-normal{
+    height: 160;  
+    margin-bottom: 25px;  
+}
