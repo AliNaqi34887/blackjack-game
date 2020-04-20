@@ -21,6 +21,7 @@ let countDealer = 0;
 let yourTurnDone = false;
 let dealerTurnDone = false;
 let isStand = false;
+let isYou = false;
 let messege, messegeColor;
 
 const YOU = blackjackGame["you"];
@@ -34,7 +35,7 @@ const lostSound = new Audio('sounds/aww.mp3');
 
 $(document).ready(function(){
     $("button#blackjackHitButton").bind('click', function(){
-        if (YOU['score'] < 21 && dealerTurnDone === false && yourTurnDone === false){
+        if (YOU['score'] < 21 && dealerTurnDone === false && isYou === false){
             selectRandomCard(YOU);
             showCard(YOU);
             yourTurnDone = true;
@@ -48,7 +49,8 @@ $(document).ready(function(){
     });
 
     $("button#blackjackStandButton").bind('click', function(){
-        if (yourTurnDone === true && isStand === false) {    
+        if (yourTurnDone === true && isStand === false) {  
+            isYou = true;
             isStand = true;
             dealerTurn();
             
@@ -214,6 +216,7 @@ function blackjackDeal() {
         yourTurnDone = false;
         dealerTurnDone = false;
         isStand = false;
+        isYou = false;
         document.querySelector("#result").textContent = "Let's Play";
         document.querySelector("#result").style.color = "black";
     }
